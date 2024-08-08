@@ -16,7 +16,7 @@ title = "Loïs Blog | French ☁️ enjoyer"
   rtl = false
   dateFormat = "2 January 2006"
   logo = "img/logo.png"
-  secondaryLogo = "img/loisg.png"
+  secondaryLogo = "img/logo.png"
   description = "Loïs Gallaud personal blog"
   # copyright = "Copy, _right?_"
 
