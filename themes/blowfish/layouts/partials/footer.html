@@ -39,11 +39,9 @@
     {{/* Theme attribution */}}
     {{ if .Site.Params.footer.showThemeAttribution | default true }}
     <p class="text-xs text-neutral-500 dark:text-neutral-400">
-      {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
+      {{ $hugo := printf `<a class="pointer-text">Hugo</a>`
       }}
-      {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-         target="_blank" rel="noopener noreferrer">Blowfish</a>` }}
+      {{ $blowfish := printf `<a class="pointer-text">Blowfish</a>` }}
       {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
     </p>
     {{ end }}
