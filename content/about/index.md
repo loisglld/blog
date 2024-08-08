@@ -37,7 +37,7 @@ To keep track of all the _cool stuff_ I’m learning and to share my journey, I 
 
 <p align="center">
   <img src="./rei.gif" alt="Running Rei"/>
-  {{< button href="/loisglob/posts" target="_self" >}}
+  {{< button href="/blog/posts" target="_self" >}}
   Dive in now ! 🌊
   {{< /button >}}
 </p>

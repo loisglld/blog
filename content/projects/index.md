@@ -89,7 +89,7 @@ So, instead of dozing off in class, I'm out here _creating_, _experimenting_, an
             <td style="display: flex; justify-content: center; align-items: center; height: 150px;">
                 <img
                     style="background-color:transparent; border-radius: 10%;"
-                    src="EOS.png"
+                    src="eos.png"
                     alt="eos Logo"
                 />
             </td>
