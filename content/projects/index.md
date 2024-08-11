@@ -82,7 +82,7 @@ So, instead of dozing off in class, I'm out here _creating_, _experimenting_, an
                 Enhanced shell Visual Studio Code file extension viewer (basically some fun / useless shell script to had spice to your terminal)
             </td>
             <td style="text-align: center; vertical-align: middle;">
-                <a target="_blank" href="https://github.com/loisgallaud/rice-code" style="display: block; margin-bottom: 5px;">{{< icon "github" >}}</a>
+                <a target="_blank" href="https://github.com/loisglld/rice-code" style="display: block; margin-bottom: 5px;">{{< icon "github" >}}</a>
             </td>
         </tr>
         <tr style="max-height: 150px; overflow: hidden;">

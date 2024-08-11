@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-# baseURL = "https://loisgallaud/github.io/blog/"
+# baseURL = "https://loisglld/github.io/blog/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
