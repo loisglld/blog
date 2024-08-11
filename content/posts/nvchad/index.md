@@ -1,11 +1,11 @@
 ---
 title: "My Code Editor is Better than Yours"
-date: 2024-08-08T16:12:50+02:00
-draft: true
-description: ""
-summary: ""
-categories: ["editor"]
-tags: ["neovim", "terminal", "vscode"]
+date: 2024-08-11T17:04:09+02:00
+draft: false
+description: "A comparison between Neovim and VSCode, highlighting why Neovim, especially with a setup like NvChad, is the superior choice for developers who prefer a highly customizable and terminal-based code editor."
+summary: "Explore why Neovim, particularly with the NvChad configuration, outshines VSCode for developers looking for a powerful and customizable terminal-based code editor. This tutorial covers the installation and setup process for NvChad on macOS, ensuring you're equipped to make the switch."
+categories: ["coding", "development", "tutorial"]
+tags: ["neovim", "terminal", "vscode", "editor", "customization"]
 showAuthor: true
 ---
 
@@ -97,7 +97,7 @@ To set it in your terminal, go to your terminal settings and go to profile > tex
 ### Time to install
 
 {{< alert icon="bomb" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
-**Warning:** If you already have a Neovim config, make sure to back it up before proceeding.
+If you already have a Neovim config, make sure to back it up before proceeding.
 {{< /alert >}}
 
 > "How do I back up my Neovim config ??"
@@ -105,5 +105,53 @@ To set it in your terminal, go to your terminal settings and go to profile > tex
 There you go:
 
 ```bash
-
+cp -r ~/.config/nvim/ ~/nvim-backup
 ```
+
+Or if you want to erase it:
+
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
+
+Ok, now that you have backed up your config, let's install NvChad.
+
+#### 1. Clone the repo
+
+Quoting the official documentation:
+
+> `NvChad's starter repo is the actual config and it uses the main NvChad repo as a plugin`
+
+```bash
+git clone https://github.com/NvChad/starter ~/.config/nvim
+```
+
+To run your NvChad config just run `nvim` in your terminal and let the magic happen.
+
+#### 2. Mason
+
+Mason est un plugin pour Neovim qui facilite l'installation, la gestion, et la mise à jour des outils externes, comme les language servers (serveurs de langage), les formatters, et les linters
+
+Run `:MasonInstallAll` after lazy.nvim installed every plugin.
+
+#### 3. Delete `.git` folder
+
+```bash
+rm -rf ~/.config/nvim/.git
+```
+
+You have now a bare NvChad setup. So from now on, you can customize it to your liking and share your config with others inside a repo.
+My advice on getting better at Neovim is to practice commands and shortcuts using VSCode Vim extension, it's a good way to get started.
+
+## Conclusion
+
+I hope you enjoyed this tutorial and that you are now ready to use Neovim. If you have any questions, feel free to ask me on [Twitter](https://x.com/loisglld)
+Just remember that the most important thing is to **have fun and to be productive**.
+
+So, don't spend too much time configuring your editor, just _USE IT_ ........
+
+<p align="center">
+  <img src="./img/buff-guy-laptop.png" alt="buff-guy-laptop"/>
+</p>
