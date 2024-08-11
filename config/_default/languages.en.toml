@@ -17,7 +17,7 @@ title = "Loïs Blog | French ☁️ enjoyer"
   dateFormat = "2 January 2006"
   logo = "img/logo.png"
   secondaryLogo = "img/logo.png"
-  description = "Loïs Gallaud personal blog"
+  description = "I’m a 21-year-old French engineering student obsessed with all things tech. From cloud computing and Kubernetes to Docker and Terraform, I’m diving deep into the coolest tools out there. On my blog, I share my journey—what I’m learning, building, and experimenting with. Whether you’re a tech newbie or a fellow enthusiast, come hang out and explore with me. Check out my blog and let’s geek out together"
   # copyright = "Copy, _right?_"
 
 [author]

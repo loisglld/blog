@@ -1,24 +1,13 @@
 <head>
-  <!-- Primary Meta Tags -->
-  <title>Loïs Blog | French ☁️ enjoyer</title>
-  <meta name="title" content="Loïs Blog | French ☁️ enjoyer" />
-  <meta name="description" content="Hey there! I’m a 21-year-old French engineering student obsessed with all things tech. From cloud computing and Kubernetes to Docker and Terraform, I’m diving deep into the coolest tools out there. On my blog, I share my journey—what I’m learning, building, and experimenting with. Whether you’re a tech newbie or a fellow enthusiast, come hang out and explore with me. Check out my blog and let’s geek out together" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://loisgallaud.github.io/blog" />
-  <meta property="og:title" content="Loïs Blog | French ☁️ enjoyer" />
-  <meta property="og:description" content="Hey there! I’m a 21-year-old French engineering student obsessed with all things tech. From cloud computing and Kubernetes to Docker and Terraform, I’m diving deep into the coolest tools out there. On my blog, I share my journey—what I’m learning, building, and experimenting with. Whether you’re a tech newbie or a fellow enthusiast, come hang out and explore with me. Check out my blog and let’s geek out together" />
   <meta property="og:image" content="meta-preview.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://loisgallaud.github.io/blog/" />
-  <meta property="twitter:title" content="Loïs Blog | French ☁️ enjoyer" />
-  <meta property="twitter:description" content="Hey there! I’m a 21-year-old French engineering student obsessed with all things tech. From cloud computing and Kubernetes to Docker and Terraform, I’m diving deep into the coolest tools out there. On my blog, I share my journey—what I’m learning, building, and experimenting with. Whether you’re a tech newbie or a fellow enthusiast, come hang out and explore with me. Check out my blog and let’s geek out together" />
   <meta property="twitter:image" content="meta-preview.png" />
 
-  <!-- Meta Tags Generated with https://metatags.io -->
   <meta charset="utf-8" />
   {{ with .Site.Language.Params.htmlCode | default .Site.LanguageCode }}
   <meta http-equiv="content-language" content="{{ . }}" />
@@ -29,6 +18,8 @@
   {{ if .IsHome -}}
   <title>{{ .Site.Title | emojify }}</title>
   <meta name="title" content="{{ .Site.Title | emojify }}" />
+  <meta property="og:title" content="{{ .Site.Title | emojify }}" />
+  <meta property="twitter:title" content="{{ .Site.Title | emojify }}" />
   {{- else -}}
   <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
   <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
@@ -36,6 +27,8 @@
   {{/* Metadata */}}
   {{ with (.Params.Summary | default .Params.Description) | default .Site.Params.description -}}
   <meta name="description" content="{{ . }}" />
+  <meta property="og:description" content="{{ . }}" />
+  <meta property="twitter:description" content="{{ . }}" />
   {{- end }}
   {{ with  .Params.Tags | default .Site.Params.keywords -}}
   <meta name="keywords" content="{{ range . }}{{ . }}, {{ end -}}" />
