@@ -132,7 +132,7 @@ To run your NvChad config just run `nvim` in your terminal and let the magic hap
 
 #### 2. Mason
 
-Mason est un plugin pour Neovim qui facilite l'installation, la gestion, et la mise à jour des outils externes, comme les language servers (serveurs de langage), les formatters, et les linters
+Mason is a plugin for Neovim that makes it easy to install, manage, and update external tools, such as language servers, formatters, and linters.
 
 Run `:MasonInstallAll` after lazy.nvim installed every plugin.
 
