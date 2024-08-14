@@ -57,9 +57,7 @@ Terragrunt promotes DRY principles by allowing you to reuse your Terraform code 
 
 Its architecture allows you to merge multiple grunt configuration files, so you can define your infrastructure in a modular way and then combine the configurations for different environments.
 
-<!-- uses `bash` because `hcl` highlighting is shit -->
-
-```bash
+```hcl
 # live/terragrunt.hcl
 inputs = merge(
   local.account_vars.locals, # overriden by region_vars
@@ -76,7 +74,7 @@ Ever mess up your backend configuration in Terraform? Yeah, we’ve all been the
 
 You can even dynamically generate your backend configurations based on the environment you’re deploying to.
 
-```bash
+```hcl
 # live/terragrunt.hcl
 remote_state {
   backend = "s3"
@@ -97,7 +95,7 @@ remote_state {
 Terraform's native support for dependencies between modules is cool, but managing these dependencies across different Terraform workspaces can be a pain.
 Terragrunt simplifies this by allowing you to define the dependencies in a more straightforward way, ensuring that your resources are applied in the correct order.
 
-```bash
+```hcl
 # live/non-prod/eu-west-1/dev/app/terragrunt.hcl
 terraform {
   source = "*{include.envcommon.locals.base_source_url}
@@ -122,6 +120,11 @@ Now, I get it. You might be thinking,
 > "This sounds awesome, but why does Terragrunt sometimes feel like ~~a nightmare~~ overkill?"
 
 Well, like everything in tech, Terragrunt isn’t perfect. It adds an extra layer of complexity to your Terraform setup. There’s a **learning curve involved**, and if you’re not careful, you might end up with a tangled mess of `terragrunt.hcl` files that are **harder to debug** than the original Terraform code.
+
+{{< lead >}}
+I mean, look at this mess:
+{{< /lead >}}
+![grunt-overview](img/grunt-overview.png)
 
 Plus, if your team isn’t familiar with Terragrunt, onboarding them _might take some time_. You have to weigh the initial complexity against the long-term benefits.
 
