@@ -150,7 +150,7 @@ My advice on getting better at Neovim is to practice commands and shortcuts usin
 I hope you enjoyed this tutorial and that you are now ready to use Neovim. If you have any questions, feel free to ask me on [Twitter](https://x.com/loisglld)
 Just remember that the most important thing is to **have fun and to be productive**.
 
-So, don't spend too much time configuring your editor, just _USE IT_ ........
+So, don't spend too much time configuring your editor, _JUST USE IT_ ........
 
 <p align="center">
   <img src="./img/buff-guy-laptop.png" alt="buff-guy-laptop"/>
