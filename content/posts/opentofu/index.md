@@ -15,7 +15,7 @@ showAuthor: true
 
 If you're like me, you probably discovered Infrastructure as Code (IaC) with Terraform and you loved it. But maybe you're also like me and you have found that Terraform can be a bit annoying to use sometimes and that many _Terraform-Enhancers_ exist such as [Terramate](https://terramate.io/), [SpaceLift](https://spacelift.io/), [Overmind](https://overmind.tech/), Terragrunt (on which I already wrote an article).
 
-{{< article link="/posts/terragrunt/" >}}
+{{< article link="/blog/posts/terragrunt/" >}}
 
 But as I wandered through documentations and articles, I stumbled upon a new _**Vegetarian Terraform Alternative**_ : [**OpenTofu**](https://opentofu.org/).
 
