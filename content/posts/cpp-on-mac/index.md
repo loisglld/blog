@@ -77,7 +77,7 @@ If you don't feel confident about coding in general and you're not sure which co
 
 But if you're cool, try this (not recommended for beginners) :
 
-{{< article link="blog/posts/nvchad/" >}}
+{{< article link="/blog/posts/nvchad/" >}}
 
 When you use VSC for the first time with a new language, you often look for extensions to help you write code more efficiently. Extensions will get your code highlighted, auto-completed, and more. Unfortunately, as I'm not a pro C++ dev with 10 years of experience, I won't be able to recommend you some extensions to use because I just don't em. But check out by yourself on the _net_ or in the _VSC marketplace_ (you can access it with `Ctrl+Shift+X` when inside VSC).
 
