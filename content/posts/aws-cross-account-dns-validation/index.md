@@ -71,17 +71,76 @@ By using DNS validation, the certificate will automatically renew as long as the
 
 ## Solutions I tried (and failed)
 
+At first we thought that DNS validation would not work if the job was not done by hand. The idea was simple : replicate what you would normally do in the AWS console in Terraform code. So that's what I tried to do.
+
 > If someone tries one of these solutions and make it work, please let me know, I spent so much time on this :/
 
 ### Using a Lambda in the `tenant` account
 
 ![solution1](images/solution1.png)
 
+#### Lambda trigger mechanism
+
+When looking for some kind of trigger mechanism, I thought of using a Lambda function that would be triggered by the ACM certificate creation event. So I had to look for a way to intercept this event.
+
+Find all events that CloudTrail logs at [AWS CloudTrail events for CloudWatch or EventBridge](https://www.intelligentdiscovery.io/tools/cloudtrailevents).
+
+![RequestCertificate](images/request_certificate.png)
+
+In Terraform, you can cionfigure a resources to trigger a Lambda function when a certificate is requested.
+
+```hcl
+# ===================================================================
+#! EventBridge to invoke Lambda
+# ===================================================================
+
+resource "aws_cloudwatch_event_rule" "acm_certificate_request_rule" {
+  name        = "AcmCertificateRequest"
+  description = "Triggers the Lambda when ACM requests a certificate."
+
+  event_pattern = jsonencode({
+    "source" : ["aws.acm"],
+    "detail-type" : ["AWS API Call via CloudTrail"],
+    "detail" : {
+      "eventSource" : ["acm.amazonaws.com"],
+      "eventName" : ["RequestCertificate"]
+    }
+  })
+}
+
+# Connect the EventBridge rule to the Lambda function
+resource "aws_cloudwatch_event_target" "lambda_target" {
+  rule      = aws_cloudwatch_event_rule.acm_certificate_request_rule.name
+  target_id = "AcmCertificateRequest"
+  #TODO: Find a way to not hardcode this
+  arn       = "arn:aws:iam::${var.root_account_id}:role/EventBridgeLambdaInvocationRole"
+}
+```
+
+#### Lambda permissions
+
+In order to execute actions inside another account, you have to grant permissions to both the Lambda role (to change the DNS records) and the account that owns the DNS records to be changed by the Lambda.
+
+At first, I thought it was the logical way to go, but as I was trying to implement it, I realized that it was not possible to change the DNS records in the `dns_admin` account from the `tenant` account because of the permissions I was trying to set. Granting permissions to resources is a risky job, because you are potentially opening a door to a security breach.
+
+> Find a way to put a `*` in the policy document, and you'll be able to do anything you want.
+
+_It was a dead end anyway_, so I moved on and tried another solution.
+
 ### Using a Lambda in the `dns_admin` account
 
 ![solution2](images/solution2.png)
 
+By doing so, I was not able to trigger anything, always a problem of permissions. Although I was sure to have te right permissions set to the right resources, Terraform wasn't deploying resources that could interact with each other without the intervention of the human / `terraform apply`.
+
+At this point I was completely lost, and I had to find another way to solve this problem.
+
 ## Solution
+
+As I was looking for permissions to set to accounts, I stumbled upon a Terraform feature that I had never used before: **provider aliases**.
+This could let me use and manage the variables in the same files, and avoid any circular dependencies between the resources.
+
+I started again with bare setup to try provider aliases on my infrastructure, and it worked like a charm.
 
 ```bash
 provider "aws" {
@@ -147,7 +206,12 @@ resource "aws_acm_certificate_validation" "this" {
 }
 ```
 
+It seems like
+
 ## Now, looking back ...
+
+All along, I was baffled by the fact that nobody addressed this problem before. So I decided to write this article to share my experience and the solution I found.
+I am not promising that this is the best solution / nor that it is correct. I am just sharing my experience.
 
 I was mostly focused on the organizational aspect of the problem, trying to align processes and communication. However, I realized that the real challenge was not organizational but technical.
 
