@@ -73,13 +73,17 @@ Throughout this part-time experience, I have gained extensive knowledge in cloud
 
 - I'm aware that other people are not up to date with what I'm doing so I'm making sure to communicate with them
 - I'm also aware that I can ask for help when I need it
-- Be being autonomous I learnt how to be naturally proactive and take initiatives when needed
+- By being autonomous I learnt how to be naturally proactive and take initiatives when needed
 
 ---
 
 ## Conclusion
 
-I'm very grateful for this opportunity and I'm glad I accepted it. Even though it's not always easy to have to juggle between work / studies / friends / sports, I think it was worth it. Now I can brag about my experience and my skills in interviews and I can also say that I've been working for a german company for about a year (10 hours a week but still).
+I'm very grateful for this opportunity and I'm glad I accepted it. Even though it's not always easy to have to juggle between work / studies / friends / sports, I think it was worth it. Now I can brag about my experience and my skills in interviews and on my resume. ᕦ(ò_óˇ)ᕤ
+
+Dalim Software is a _great company_ to work for and I'm glad to have the chance to work with such kind people. I'm **ultra** grateful for the trust they give me and the opportunity they offered me.
+
+> Thank you Melwin, Vincent, Céline and the rest of the team for your continuous support and your kindness.
 
 ## And now ?
 
