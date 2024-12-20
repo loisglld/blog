@@ -24,10 +24,10 @@ layoutBackgroundHeaderSpace: false
 
 **Even though I'm a full-time student**, I still find time to work on side projects (because why not?).
 
-**_Let's be real_** — tinkering with cool tech and building awesome stuff is way more exciting than sitting through another lecture where the highlight is... not much.
+**_Let's be real_** — tinkering with cool tech and building awesome stuff is way more exciting than sitting through another school lecture where the highlight is... not much.
 So, instead of dozing off in class, I'm out here _creating_, _experimenting_, and basically **having a blast**.
 
-> _Don't worry, professors, I promise I'm still learning_ 🤡
+> **_Here are some of the projects I've worked on._** You can check all of them out on my [GitHub profile](https://github.com/loisglld).
 
 <style>
 @media only screen and (max-width: 600px) {
@@ -59,12 +59,12 @@ So, instead of dozing off in class, I'm out here _creating_, _experimenting_, an
                 Kiwi
             </td>
             <td class="description" style="text-align: center; vertical-align: middle; max-width: 500px; overflow: hidden; text-overflow: ellipsis;">
-                <!-- Educational platform offering articles and training in computer science, created by a community of French students. User interaction, badge acquisition, and point accumulation through accessible and engaging lessons. -->
-                Coming soon
+                Educational platform offering articles and training in computer science, created by a community of French students. User interaction, badge acquisition, and point accumulation through accessible and engaging lessons.
             </td>
             <td style="text-align: center; vertical-align: middle;">
-                <a target="_blank" href="https://github.com/romainbourdain/sogolb" style="display: block; margin-bottom: 5px;">{{< icon "github" >}}</a>
+                <!-- <a target="_blank" href="https://github.com/romainbourdain/sogolb" style="display: block; margin-bottom: 5px;">{{< icon "github" >}}</a> -->
                 <!-- <a target="_blank" href="https://themes.gohugo.io/kiwi/" style="display: block;">{{< icon "link" >}}</a> -->
+                <div style="display: block; margin-bottom: 5px;">{{< icon "github" >}}</div>
             </td>
         </tr>
         <tr style="max-height: 150px; overflow: hidden;">
