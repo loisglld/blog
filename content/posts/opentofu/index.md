@@ -4,7 +4,7 @@ date: 2024-08-29T10:16:54+02:00
 draft: false
 description: ""
 summary: ""
-categories: ["coding", "development", "tutorial", "infrastructure"]
+categories: ["coding", "development", "infrastructure"]
 tags: ["terraform", "terragrunt", "devops"]
 showAuthor: true
 ---
