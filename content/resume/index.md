@@ -49,13 +49,20 @@ Filling my brain with cool stuff – always a win
         </tr>
     </thead>
     <tbody>
+     <tr>
+            <td><img class="customEntitityLogo" src="axa.svg"/></td>
+            <td><a href="https://www.axa.fr/" target="_blank">AXA France</a></td>
+            <td>Tech Lead PaaS Intern</td>
+            <td>March 25 - Present</td>
+            <td>Hybrid</br> La Défense, Paris, FR</td>
+        </tr>
         <tr>
             <td rowspan=3><img class="customEntitityLogo" src="dalim.png"/></td>
             <td rowspan=3><a href="https://www.dalim.com/" target="_blank">Dalim Software GmbH</a></td>
         </tr>
         <tr>
-            <td>Junior Cloud Architect</td>
-            <td>Sept - Present</td>
+            <td>DevOps Assistant</td>
+            <td>Sept 24 - March 25</td>
             <td>Full Remote </br> Strasbourg, FR</td>
         </tr>
         <tr>
