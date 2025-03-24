@@ -27,17 +27,19 @@ layoutBackgroundHeaderSpace: false
 Hello there 🐳  
 {{< /typeit >}}
 
-**Totally into new tech**, I’m a _21-year-old French engineering student_ who spends <ins>every free moment</ins> diving into new programming languages and exploring the coolest tech fields. My curiosity takes me everywhere, especially into **cloud computing** and awesome tools like **Kubernetes**, **Docker**, **Terraform**, and all their buddies. I can totally see myself growing in these areas as I move forward in my career.
+**Totally into new tech**, I’m a _21-year-old French engineering student_ who spends every free moment exploring the coolest tech fields. My curiosity takes me everywhere, especially into **cloud computing** and awesome tools like **Kubernetes**, **Docker**, **Terraform**, and all their buddies. I can totally see myself growing in these areas as I move forward in my career.
 
-_Currently, I'm working part-time for a German company, which allows me to practice my AWS skills and gain valuable professional experience._ On the side, I develop full-stack projects, giving me the chance to master both front-end and back-end development.
+After being employed as a part-time DevOps assistant alongside my engineering studies, I'm currently part of the **Cloud Program at AXA France** based in **La Défense** — the heart of the French business district. There, I contribute to infrastructure product development within the **OPS Guild** in the **PaaS** team, working hands-on with **Terraform** and **Microsoft Azure**.
 
-To keep track of all the _cool stuff_ I’m learning and to share my journey, I decided to start a blog. It’s way better than letting my notes disappear into a Notion page or get lost in a pile of paper. This blog is my way of contributing to the community while structuring my own learning journey.
+Outside of my professional role, I like to experiment with **full-stack development**, explore new technologies, and refine my understanding of both the front-end and the back-end. I’m especially drawn to _the reliability and scalability challenges of cloud-native systems_.
 
-> **So, don't wait any longer** _head over to the blog and dive into the articles nowww 💨_
+This blog is where I document the things I learn, the tools I use, and the concepts _I find worth sharing_. It’s not meant to be flashy — just a space to reflect, structure my thoughts, and hopefully provide something useful along the way.
+
+> Want to see more ? Head over to the blog 💨
 
 <p align="center">
   <img src="./rei.gif" alt="Running Rei"/>
   {{< button href="/blog/posts" target="_self" >}}
-  Dive in now ! 🌊
+  Go to the blog
   {{< /button >}}
 </p>

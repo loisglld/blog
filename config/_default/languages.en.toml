@@ -7,7 +7,7 @@ weight = 1
 # title = "( ͡°³ ͡°)"
 # title = "(☞  ͡° ͜ʖ ͡°)☞"
 # title = "ᕕ( ͡° ͜ʖ ͡° )ᕗ"
-title = "Loïs Blog | French ☁️ enjoyer"
+title = "Loïs Blog (◕‿◕✿)"
 # title = "ʕ ● ᴥ ●ʔ"
 
 [params]
@@ -23,8 +23,8 @@ title = "Loïs Blog | French ☁️ enjoyer"
 [author]
   name = "Loïs Gallaud"
   image = "img/loisg.png"
-  headline = "Cloud Enthusiast •ᴗ•"
-  bio = "21 yo Tech Lead PaaS @ AXA France"
+  bio = "Cloud Enthusiast •ᴗ•"
+  headline = "Tech Lead PaaS @ AXA France"
   links = [
     # { email = "mailto:lois.com" },
     { link = "https://who-is-loisg.vercel.app" },
